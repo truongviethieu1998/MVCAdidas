@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Việt Nam</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/Css/reset.css">
+    <link rel="stylesheet" href="~/Content/Css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="~/Content/image/logo-con.jpg">
+    <!-- Toasts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-1">
+            <div class="header-info">
+                <span class="sdt">SĐT 0374-630-383</span><span>Email: Adidas@gmail.com</span>
+            </div>
+            <div class="header-info header2">
+                <span>Địa chỉ : 31 Phan Đình Giót - Thanh Xuân - Hà Nội</span>
+                <a href="@Url.Action("Login","Admin")" title="Đăng nhập">Đăng nhập</a>
+            </div>
+        </div>
+        <div class="wrap" id="myHeader">
+            <div class="header-2">
+                <div class="logo">
+                    <a href="@Url.Action("Index","Home")">
+                        <img id="img-logo" src="~/Content/image/ZUA1fE.gif" alt="">
+                    </a>
+                </div>
+                <ul class="header-2-ul" id="header-2-ul">
+                    <li data-aos="fade-down" data-aos-delay="100">
+                        <a href="@Url.Action("Giay","Home")">GIÀY</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="150">
+                        <a href="@Url.Action("QuanAo","Home")">QUẦN ÁO</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="200">
+                        <a href="@Url.Action("Phukien","Home")">PHỤ KIỆN</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="250">
+                        <a href="">GIẢM GIÁ</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="300">
+                        <a href="">THỂ THAO</a>
+                    </li>
+                </ul>
+                <div class="search-and-cart">
+                    <ul class="search-and-cart-ul">
+                        <li data-aos="fade-down" data-aos-delay="400">
+                            <div class="search">
+                                <input type="text" id="search-input" placeholder="tìm kiếm">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </li>
+                        <li data-aos="fade-down" data-aos-delay="450">
+                            <a href="" title="Giỏ hàng"><img src="~/Content/image/cart.png" alt="" id="cart"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    @RenderBody()
+</body>
+</html>
+<footer class="footer">
+    <section>
+        <div class="dangkyEmail">
+            <div class="wrap">
+                <p>ĐĂNG KÝ NHẬN THÔNG TIN CẬP NHẬT VÀ ƯU ĐÃI QUA EMAIL</p>
+                <a href="#">Đăng ký nhận bản tin <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <ul class="ul-footer">
+        <li>
+            <div class="footer-item">
+                <img src="~/Content/image/ZUA1fE.gif" alt="">
+                <p>Office Online: 0374-630-383</p>
+                <p>HN: 31 PHAN ĐÌNH GIÓT - THANH XUÂN - HÀ NỘI</p>
+                <p>Open: 8h30 - 21h30 </p>
+                <p>Hotline: 0374-630-383 (tạm đóng cửa)</p>
+            </div>
+        </li>
+        <li>
+            <div class="footer-item">
+                <h5>CHÍNH SÁCH</h5>
+                <p>CHÍNH SÁCH BẢO QUẢN</p>
+                <p>CHÍNH SÁCH ĐỔI HÀNG</p>
+                <p>CHÍNH SÁCH BẢO MẬT</p>
+                <p>HỆ THỐNG MEMBER</p>
+            </div>
+        </li>
+        <li>
+            <div class="footer-item">
+                <h5>DỊCH VỤ HƯỚNG DẪN</h5>
+                <p>GIAO HÀNG TẬN NƠI</p>
+                <p>MEMBER OFFLINE</p>
+                <p>MEMBER ONLINE</p>
+                <p>HƯỚNG DẪN ĐĂNG KÝ TÀI KHOẢN</p>
+                <p>HƯỚNG DẪN BẢO QUẢN</p>
+            </div>
+        </li>
+        <li>
+            <div class="footer-item">
+                <h5>CỘNG ĐỒNG</h5>
+                <a href="" title="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="" title="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="" title="twitter"><i class="fab fa-twitter"></i></a>
+                <h5 style="margin-top: 20px;">ĐỐI TÁC GIAO HÀNG</h5>
+                <img src="~/Content/image/doitacgiaohang.png" alt="">
+            </div>
+        </li>
+    </ul>
+    <p class="last-footer">Copyright 2020 © ADIDAS</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+
+<script>
+    AOS.init();
+</script>
+<script>
+    function openMenu() {
+        document.getElementById("header-2-ul").style.right = "0";
+    }
+
+    function closeMenu() {
+        document.getElementById("header-2-ul").style.right = "-50%";
+    }
+
+    window.onscroll = function () {
+        myFunction()
+    };
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+    $(document).ready(function () {
+        $('.test').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    })
+</script>

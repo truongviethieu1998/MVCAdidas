@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet" />
+
+<section>
+    <div class="wrap">
+        <div class="dichvu">
+            <!-- MODAL -->
+            <div class="dichvu-item">
+                <i class="fas fa-car"></i>
+                <p class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">TRẢ HÀNG DỄ DÀNG</p>
+                <!-- MODAL -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h1>MIỄN PHÍ GIAO HÀNG TRÊN 1.300.000 VNĐ</h1>
+                                <p>Miễn phí giao hàng cho tất cả các đơn hàng từ 1.300.000 VNĐ trở lên.</p>
+                                <p>Cho các đơn hàng còn lại, phí giao hàng tiêu chuẩn được áp dụng.</p>
+                                <p>Hãy kiểm tra Điều Khoản & Điều Kiện giao hàng của chúng tôi để biết thêm chi tiết.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dichvu-item">
+                <i class="fas fa-box-open"></i>
+                <p class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">THANH TOÁN THẺ TÍN DỤNG</p>
+                <!-- MODAL -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h1>TRẢ HÀNG DỄ DÀNG</h1>
+                                <p>Nếu bạn không hài lòng với đơn hàng của mình, bạn có thể được hoàn lại tiền.</p>
+                                <p>Vui lòng xem Chính Sách Trả Hàng của chúng tôi để biết thêm chi tiết.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dichvu-item">
+                <i class="fas fa-money-check"></i>
+                <p class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">MIỄN PHÍ GIAO HÀNG TRÊN 1.300.000 VNĐ</p>
+                <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h1>NAY ĐÃ CÓ THỂ THANH TOÁN VỚI THẺ TÍN DỤNG!</h1>
+                                <p>Giờ đây bạn có thể thanh toán bằng thẻ Visa và Mastercard! Lựa chọn phương thức</p>
+                                <p>Thanh toán bằng thẻ tín dụng ở bước thanh toán. Mua các sản phẩm yêu thích ngay thôi!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="login">
+                    <h3>ĐĂNG NHẬP</h3>
+                    <a href="">Bạn quên mật khẩu?</a>
+                    <div class="input">
+                        <input type="email" id="Username">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="Password">
+                        <label for="">Mật khẩu</label>
+                    </div>
+                    <button id="login-button">ĐĂNG NHẬP <i class="fas fa-arrow-right"></i></button>
+                    <p>HOẶC</p>
+
+                    <a href="" id="loginMore">FACEBBOOK <i class="fab fa-facebook"></i></a>
+                    <a href="" id="loginMore">GOOGLE <i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="logout">
+                    <h3>TẠO MỘT TÀI KHOẢN</h3>
+                    <label for="">Thật dễ dàng tạo một tài khoản. Hãy nhập địa chỉ email của bạn và điền vào mẫu trên trang tiếp theo và tận hưởng những lợi ích của việc sở hữu một tài khoản.</label>
+                    <p>Tổng quan đơn giản về thông tin cá nhân của bạn</p>
+                    <p>Thanh toán nhanh hơn </p>
+                    <p>Một lần đăng nhập chung duy nhất để tương tác với các sản phẩm và dịch vụ của adidas </p>
+                    <p>Ưu đãi và khuyến mãi độc quyền </p>
+                    <p>Các sản phẩm mới nhất </p>
+                    <p>Các bộ sưu tập giới hạn và bộ sưu tập theo mùa mới </p>
+                    <p>Các sự kiện sắp tới </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $("#Username,#Password").keyup(function (event) {
+        if (event.keyCode === 13) {
+            $("#login-button").click();
+        }
+    });
+    $('#login-button').click(function () {
+        let email = $('#Username').val();
+        let password = $('#Password').val();
+        if (email != '' && password != '') {
+            let data = { Email: email, Password: password };
+            $.ajax({
+                url: '/Login/Index',
+                type: 'POST',
+                data: { model: data },
+            })
+                .done(function (res) {
+                    if (res.Code == 200) {
+                        toastr["success"]('Đăng nhập thành công')
+                        location.href = "/Admin/Quantri/Index";
+                    }
+                    else {
+                        toastr["error"]('Đăng nhập thất bại')
+                        toastr.options = {
+                            "closeButton": true,
+                        }
+                    }
+                })
+                .fail(function () {
+                    toastr["error"]('Đăng nhập thất bại')
+                    toastr.options = {
+                        "closeButton": true,
+                    }
+                })
+                .always(function () {
+                });
+        }
+        else {
+            toastr["error"]('Bạn chưa nhập email hoặc password', 'LỖI!!!')
+            toastr.options = {
+                "closeButton": true,
+            }
+        }
+    });
+</script>
